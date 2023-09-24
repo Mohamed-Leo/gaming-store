@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 50px;
+}
+main h1 {
+  color: #F9AA01;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: 20px;
+  gap: 30px;
+}
+main .container h3 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+main .container form {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #1a1223, #1f152a);
+  box-shadow: 20px 20px 60px #0c0810, -20px -20px 60px #2e203e;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: #F9AA01;
+}
+main .container form .form-box {
+  width: 100%;
+  border-radius: 20px;
+  background: #1d1427;
+  box-shadow: inset 20px 20px 60px #0c0810, inset -20px -20px 60px #2e203e;
+}
+main .container form .form-box input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px 20px;
+}
+main .container form .form-box textarea {
+  width: 100%;
+  min-height: 150px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px 20px;
+}
+main .container form .custum-file-upload {
+  width: 200px;
+  height: 150px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  border: 2px dashed #cacaca;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0, 0, 0, 0.1);
+}
+main .container form .custum-file-upload span {
+  color: #3a0ca3;
+}
+main .container form .custum-file-upload input {
+  border: 1px solid red;
+  background-color: red;
+  display: none;
+}
+main .container form .custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container form .custum-file-upload .icon svg {
+  height: 40px;
+  width: 40px;
+  fill: rgb(75, 85, 99);
+}
+main .container form .custum-file-upload input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  opacity: 0;
+}
+main .container form .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+main .container form .buttons #btn_1,
+main .container form .buttons #btn_2,
+main .container form .buttons #btn_3 {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5019607843);
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5019607843);
+  transition: 0.5s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+main .container form .buttons #btn_1:hover, main .container form .buttons #btn_1:focus,
+main .container form .buttons #btn_2:hover,
+main .container form .buttons #btn_2:focus,
+main .container form .buttons #btn_3:hover,
+main .container form .buttons #btn_3:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;
+}
+main .container form .buttons #btn_2:hover, main .container form .buttons #btn_2:focus {
+  color: #ffffff;
+  background: #FF3856;
+  border: 1px solid #FF3856;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #FF3856, 0 0 20px #FF3856, 0 0 50px #FF3856, 0 0 100px #FF3856;
+}
+main .container form .buttons #btn_3:hover, main .container form .buttons #btn_3:focus {
+  color: #ffffff;
+  background: #66ff66;
+  border: 1px solid #66ff66;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #66ff66, 0 0 20px #66ff66, 0 0 50px #66ff66, 0 0 100px #66ff66;
+}
+main .container .view {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #1a1223, #1f152a);
+  box-shadow: 20px 20px 60px #0c0810, -20px -20px 60px #2e203e;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .container .view .products-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+main .container .view .products-box .box {
+  width: calc(50% - 15px);
+}
+main .container .view .products-box .box img {
+  width: 100%;
+  max-width: 100%;
+}
+main .container .view .btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  z-index: 10;
+  cursor: pointer;
+}
+main .container .view .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: 0.5s ease;
+}
+main .container .view .btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+main .container .view .btn:hover::before {
+  width: 100%;
+}
+main .container .view .btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+main .container .view .btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+main .container .feed {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #1a1223, #1f152a);
+  box-shadow: 20px 20px 60px #0c0810, -20px -20px 60px #2e203e;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .container .feed .swiper-container-3 {
+  background: url("https://c4.wallpaperflare.com/wallpaper/984/871/802/call-of-duty-call-of-duty-modern-warfare-2-video-game-characters-video-games-farah-hd-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+main .container .feed .swiper-container-3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66, 68, 91, 0.6039215686);
+}
+main .container .feed .swiper-container-3 .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container .feed .swiper-container-3 .swiper-slide .box-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+main .container .feed .swiper-container-3 .swiper-slide .box-feed span {
+  color: #F9AA01;
+}
+main .container .feed .swiper-container-3 .swiper-slide .box-feed img {
+  width: 100px;
+  border-radius: 50%;
+}
+main .container .feed .swiper-container-3 .swiper-slide .box-feed p {
+  line-height: 2rem;
+}
+main .container .feed button {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  cursor: pointer;
+}
+main .container .feed button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+main .container .feed button:hover {
+  color: #fff;
+}
+main .container .feed button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+main .container .feed button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+main .container .feed button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+.con-update {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(19, 18, 18, 0.4117647059);
+  border-radius: 5px;
+}
+
+.label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inpdddut[type=file] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #1aa3bb;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.inpdddut[type=submit] {
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inpdddut[type=submit]:hover {
+  background-color: #006F8F;
+}/*# sourceMappingURL=admin.css.map */

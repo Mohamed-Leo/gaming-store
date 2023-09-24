@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("https://capricathemes.com/wordpress/WCM04/WCM040086/wp-content/themes/gamehoak/images/codezeel/body-bg.jpg");
+}
+
+.container-from {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+.container-from form.feed-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #1d1427;
+  box-shadow: 20px 20px 60px #0c0810, -20px -20px 60px #2e203e;
+  width: 500px;
+  max-width: 100%;
+  color: #fff;
+}
+.container-from form.feed-form h1 {
+  color: #f9aa01;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+.container-from form.feed-form .form-box {
+  width: 100%;
+  border-radius: 20px;
+  background: #1d1427;
+  box-shadow: inset 20px 20px 60px #0c0810, inset -20px -20px 60px #2e203e;
+}
+.container-from form.feed-form .form-box input.form-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px 20px;
+}
+.container-from form.feed-form .form-box input.form-input::-moz-placeholder {
+  color: rgba(245, 245, 245, 0.322);
+}
+.container-from form.feed-form .form-box input.form-input::placeholder {
+  color: rgba(245, 245, 245, 0.322);
+}
+.container-from form.feed-form .form-box textarea {
+  width: 100%;
+  min-height: 150px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px 20px;
+}
+.container-from form.feed-form button {
+  font-family: inherit;
+  font-size: 20px;
+  background: #f9aa01;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.container-from form.feed-form button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+.container-from form.feed-form button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+.container-from form.feed-form button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+.container-from form.feed-form button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+.container-from form.feed-form button:hover span {
+  transform: translateX(5em);
+}
+.container-from form.feed-form button:active {
+  transform: scale(0.95);
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}/*# sourceMappingURL=feddback.css.map */

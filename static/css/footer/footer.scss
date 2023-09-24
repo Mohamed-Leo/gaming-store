@@ -1,0 +1,64 @@
+// start variables
+$main-color : #1D1427;
+$second-color : #F9AA01;
+$third-color : #fff;
+$fourth-color : #A2A4A6;
+// end variables
+
+
+
+
+footer {
+    background: url("https://c4.wallpaperflare.com/wallpaper/112/262/501/gaming-series-video-games-pubg-players-unknown-battleground-bikes-hd-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 50;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000071;
+        z-index: -1;
+    }
+
+    .links-sec {
+        .flex-box {
+            justify-content: center;
+
+            h5 {
+                color: $second-color;
+            }
+
+            .links-ul {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                li {
+
+                    i {
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-text {
+        margin: 30px 0;
+        line-height: 2rem;
+    }
+
+    .mb-md-0 {
+        margin-bottom: 30px !important;
+    }
+}

@@ -1,0 +1,469 @@
+.head {
+  text-align: center;
+  color: #fff;
+  width: 280px;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 32px;
+  background: linear-gradient(225deg, #1a1223, #1f152a);
+  box-shadow: -12px 12px 57px #0c0810, 12px -12px 57px #2e203e;
+  margin-bottom: 60px;
+}
+
+/* Start Components */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1300px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+main .section-1 {
+  padding: 50px 0;
+}
+main .section-1 .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  /* for all social containers*/
+}
+main .section-1 .container .socialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  overflow: hidden;
+  transition: 0.3s;
+  border-radius: 30px;
+  background: #1D1427;
+  box-shadow: 16px 16px 34px #130d19, -16px -16px 34px #271b35;
+  padding: 15px;
+}
+main .section-1 .container .socialContainer i {
+  color: #fff;
+  transition: 0.3s;
+  font-size: 30px;
+}
+main .section-1 .container .socialContainer .text {
+  color: #fff;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+main .section-1 .container .socialContainer .text span {
+  color: #A2A4A6;
+}
+main .section-1 .container .socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s linear alternate;
+  color: #F9AA01;
+}
+main .section-1 .container .socialContainer:hover .text {
+  color: #F9AA01;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+main .section-2 {
+  padding: 50px 0;
+}
+main .section-2 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+main .section-2 .container .box {
+  width: calc(50% - 30px);
+  overflow: hidden;
+}
+main .section-2 .container .box:hover img {
+  transform: scale(1.2);
+}
+main .section-2 .container .box img {
+  width: 100%;
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  main .section-2 .container {
+    flex-direction: column;
+  }
+  main .section-2 .container .box {
+    width: 100%;
+  }
+}
+main .section-3 {
+  padding: 50px 0;
+}
+main .section-3 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+main .section-3 .container .box {
+  width: calc(50% - 30px);
+}
+main .section-3 .container .box video {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 640px) {
+  main .section-3 .container {
+    flex-direction: column;
+  }
+  main .section-3 .container .box {
+    width: 100%;
+  }
+}
+main .section-4 {
+  padding: 50px 0;
+}
+main .section-4 .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+main .section-4 .container .box .card {
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 20px;
+  border-radius: 32px;
+  background: linear-gradient(225deg, #1a1223, #1f152a);
+  box-shadow: -12px 12px 42px #0c0810, 12px -12px 42px #2e203e;
+}
+main .section-4 .container .box .card:hover {
+  transform: translateY(-10px);
+}
+main .section-4 .container .box .card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+main .section-4 .container .box .card p {
+  color: #fff;
+  padding: 15px;
+}
+main .section-4 .container .box .card img {
+  max-width: 100%;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+main .section-5 {
+  padding: 50px 0;
+}
+main .section-5 .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+main .section-5 .container .box .card {
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 20px;
+  border-radius: 32px;
+  background: linear-gradient(225deg, #1a1223, #1f152a);
+  box-shadow: -12px 12px 42px #0c0810, 12px -12px 42px #2e203e;
+}
+main .section-5 .container .box .card:hover {
+  transform: scale(1.05);
+}
+main .section-5 .container .box .card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+main .section-5 .container .box .card p {
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-size: 25px;
+}
+main .section-5 .container .box .card img {
+  max-width: 100%;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+main .section-5 .container .box .card .os-system {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+}
+main .section-5 .container .box .card .os-system i {
+  color: #F9AA01;
+  font-size: 25px;
+}
+main .section-5 .container .box .card a {
+  text-decoration: none;
+}
+main .section-5 .container .box .card button {
+  position: relative;
+  width: 11em;
+  height: 4em;
+  outline: none;
+  transition: 0.1s;
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ddebf0;
+  margin: 15px auto 0;
+}
+main .section-5 .container .box .card #clip {
+  --color: #2761c3;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 5px double var(--color);
+  box-shadow: inset 0px 0px 15px #195480;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+main .section-5 .container .box .card .arrow {
+  position: absolute;
+  transition: 0.2s;
+  background-color: #2761c3;
+  top: 35%;
+  width: 11%;
+  height: 30%;
+}
+main .section-5 .container .box .card #leftArrow {
+  left: -13.5%;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+main .section-5 .container .box .card #rightArrow {
+  -webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);
+  left: 102%;
+}
+main .section-5 .container .box .card button:hover #rightArrow {
+  background-color: #27c39f;
+  left: -15%;
+  animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+}
+main .section-5 .container .box .card button:hover #leftArrow {
+  background-color: #27c39f;
+  left: 103%;
+  animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+}
+main .section-5 .container .box .card .corner {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  background-color: #2761c3;
+  box-shadow: inset 1px 1px 8px #2781c3;
+  transform: scale(1) rotate(45deg);
+  transition: 0.2s;
+}
+main .section-5 .container .box .card #rightTop {
+  top: -1.98em;
+  left: 91%;
+}
+main .section-5 .container .box .card #leftTop {
+  top: -1.96em;
+  left: -3em;
+}
+main .section-5 .container .box .card #leftBottom {
+  top: 2.1em;
+  left: -2.15em;
+}
+main .section-5 .container .box .card #rightBottom {
+  top: 45%;
+  left: 88%;
+}
+main .section-5 .container .box .card button:hover #leftTop {
+  animation: 0.1s ease-in-out 0.05s both changeColor8, 0.2s linear 0.4s both lightEffect8;
+}
+main .section-5 .container .box .card button:hover #rightTop {
+  animation: 0.1s ease-in-out 0.15s both changeColor8, 0.2s linear 0.4s both lightEffect8;
+}
+main .section-5 .container .box .card button:hover #rightBottom {
+  animation: 0.1s ease-in-out 0.25s both changeColor8, 0.2s linear 0.4s both lightEffect8;
+}
+main .section-5 .container .box .card button:hover #leftBottom {
+  animation: 0.1s ease-in-out 0.35s both changeColor8, 0.2s linear 0.4s both lightEffect8;
+}
+main .section-5 .container .box .card button:hover .corner {
+  transform: scale(1.25) rotate(45deg);
+}
+main .section-5 .container .box .card button:hover #clip {
+  animation: 0.2s ease-in-out 0.55s both greenLight8;
+  --color: #27c39f;
+}
+@keyframes changeColor8 {
+  from {
+    background-color: #2781c3;
+  }
+  to {
+    background-color: #27c39f;
+  }
+}
+@keyframes lightEffect8 {
+  from {
+    box-shadow: 1px 1px 5px #27c39f;
+  }
+  to {
+    box-shadow: 0 0 2px #27c39f;
+  }
+}
+@keyframes greenLight8 {
+  to {
+    box-shadow: inset 0px 0px 32px #27c39f;
+  }
+}
+@keyframes leftArrow8 {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+@keyframes rightArrow8 {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+main .section-6 {
+  padding: 50px 0;
+  position: relative;
+}
+main .section-6 .custom-shape-divider-bottom-1691353763 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+main .section-6 .custom-shape-divider-bottom-1691353763 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 130px;
+}
+main .section-6 .custom-shape-divider-bottom-1691353763 .shape-fill {
+  fill: #1D1427;
+}
+main .section-6 .custom-shape-divider-top-1691353924 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+main .section-6 .custom-shape-divider-top-1691353924 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 124px;
+}
+main .section-6 .custom-shape-divider-top-1691353924 .shape-fill {
+  fill: #1D1427;
+}
+main .section-6 img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-7 {
+  padding: 50px 0;
+}
+main .section-7 .swiper-container-2 {
+  background: url("https://c4.wallpaperflare.com/wallpaper/984/871/802/call-of-duty-call-of-duty-modern-warfare-2-video-game-characters-video-games-farah-hd-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: calc(100vh - 77px);
+  position: relative;
+}
+main .section-7 .swiper-container-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66, 68, 91, 0.6039215686);
+}
+main .section-7 .swiper-container-2 .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section-7 .swiper-container-2 .swiper-slide .box-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+main .section-7 .swiper-container-2 .swiper-slide .box-feed span {
+  color: #F9AA01;
+}
+main .section-7 .swiper-container-2 .swiper-slide .box-feed img {
+  width: 125px;
+  height: 130px;
+  border-radius: 50%;
+}
+main .section-7 .swiper-container-2 .swiper-slide .box-feed p {
+  line-height: 2rem;
+}
+main .section-7 .swiper-container-2 .swiper-pagination span {
+  background-color: #F9AA01;
+  width: 15px;
+  height: 15px;
+}/*# sourceMappingURL=main.css.map */

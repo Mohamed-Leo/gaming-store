@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("https://capricathemes.com/wordpress/WCM04/WCM040086/wp-content/themes/gamehoak/images/codezeel/body-bg.jpg");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F9AA01;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+main {
+  padding: 50px 15px;
+}
+main .head {
+  text-align: center;
+  color: #F9AA01;
+  width: 280px;
+  font-size: 2.5rem;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 32px;
+  background: linear-gradient(225deg, #1a1223, #1f152a);
+  box-shadow: -12px 12px 57px #0c0810, 12px -12px 57px #2e203e;
+  margin-bottom: 80px;
+}
+main .profile-con {
+  display: flex;
+  gap: 40px;
+}
+main .profile-con .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+main .profile-con .profile .pro-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .profile-con .profile .pro-data .pro-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+main .profile-con .profile .pro-data .pro-img img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+main .profile-con .profile form.change_img {
+  background-color: #fff;
+  border-radius: 6px;
+}
+main .profile-con .profile form.change_img .align {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+main .profile-con .profile form.change_img .align label {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+main .profile-con .profile form.change_img .align input {
+  color: #000;
+  display: none;
+}
+main .profile-con .profile form.change_img .align button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #1a1223;
+  color: #fff;
+  transition: 0.5s;
+}
+main .profile-con .profile form.change_img .align button:hover {
+  background-color: #000;
+}
+main .profile-con .profile .pro-text {
+  text-align: center;
+}
+main .profile-con .profile .pro-text p {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 0;
+}
+main .profile-con .profile .pro-text .user {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+main .profile-con .update-profile {
+  width: calc(40% - 40px);
+}
+main .profile-con .update-profile form {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #1a1223, #1f152a);
+  box-shadow: 20px 20px 60px #0c0810, -20px -20px 60px #2e203e;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: aqua;
+}
+main .profile-con .update-profile form .form-box {
+  width: 100%;
+  border-radius: 20px;
+  background: #1d1427;
+  box-shadow: inset 20px 20px 60px #0c0810, inset -20px -20px 60px #2e203e;
+}
+main .profile-con .update-profile form .form-box input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px 20px;
+}
+main .profile-con .update-profile form .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+main .profile-con .update-profile form .buttons #btn_3 {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5019607843);
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5019607843);
+  transition: 0.5s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+main .profile-con .update-profile form .buttons #btn_3:hover, main .profile-con .update-profile form .buttons #btn_3:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;
+}
+main .profile-con .update-profile form .buttons #btn_3:hover, main .profile-con .update-profile form .buttons #btn_3:focus {
+  color: #ffffff;
+  background: #66ff66;
+  border: 1px solid #66ff66;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #66ff66, 0 0 20px #66ff66, 0 0 50px #66ff66, 0 0 100px #66ff66;
+}
+@media (max-width: 991px) {
+  main .profile-con {
+    flex-direction: column;
+  }
+  main .profile-con .profile,
+  main .profile-con .update-profile {
+    width: 100%;
+  }
+}/*# sourceMappingURL=profile.css.map */

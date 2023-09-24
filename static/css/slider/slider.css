@@ -1,0 +1,60 @@
+/* Start Swiper container styling */
+.swiper {
+  width: 100%;
+  max-height: 100vh;
+}
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  position: absolute;
+  transition: 0.4s;
+  opacity: 0;
+  color: #F9AA01;
+  margin: 0 20px;
+}
+.swiper .swiper-button-prev {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper .swiper-button-next {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991px) {
+  .swiper {
+    height: 90vh;
+  }
+}
+@media (max-width: 768px) {
+  .swiper {
+    height: 60vh;
+  }
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+    display: none;
+  }
+}
+@media (max-width: 568px) {
+  .swiper {
+    height: 40vh;
+  }
+}
+@media (max-width: 368px) {
+  .swiper {
+    height: 30vh;
+  }
+}
+/* End Swiper container styling *//*# sourceMappingURL=slider.css.map */

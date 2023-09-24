@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://capricathemes.com/wordpress/WCM04/WCM040086/wp-content/themes/gamehoak/images/codezeel/body-bg.jpg");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F9AA01;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+
+// start variables
+$main-color : #1D1427;
+$second-color : #F9AA01;
+$third-color : #fff;
+$fourth-color : #A2A4A6;
+// end variables
+
+
+.about {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+
+    h1 {
+        color: #F9AA01;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    .my-talk {
+
+        img {
+            margin: 40px 0;
+            border-radius: 42% 58% 70% 30% / 30% 45% 55% 70% ;
+            width: 100%;
+        }
+
+        p {
+            color: #fff;
+            line-height: 2rem;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}

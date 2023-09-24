@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://c4.wallpaperflare.com/wallpaper/932/891/825/hogwarts-legacy-video-games-dragon-owl-harry-potter-hd-wallpaper-preview.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body:after {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6705882353);
+  z-index: -1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #077DEC;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  margin: 30px 0;
+}
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  width: 400px;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #fff;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  overflow: hidden;
+  position: relative;
+}
+main .container form.login-form,
+main .container form.register-form {
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+}
+main .container form.login-form .wrapper,
+main .container form.register-form .wrapper {
+  width: 100%;
+  height: 100%;
+}
+main .container form.login-form .wrapper h2,
+main .container form.register-form .wrapper h2 {
+  text-align: center;
+  color: #077dec;
+  font-size: 2em;
+}
+main .container form.login-form .wrapper .input-box,
+main .container form.register-form .wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #077dec;
+  margin: 30px 0;
+}
+main .container form.login-form .wrapper .input-box label,
+main .container form.register-form .wrapper .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #077dec;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.4s;
+}
+main .container form.login-form .wrapper .input-box input,
+main .container form.register-form .wrapper .input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  caret-color: #077dec;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+main .container form.login-form .wrapper .input-box input:focus ~ label, main .container form.login-form .wrapper .input-box input:valid ~ label,
+main .container form.register-form .wrapper .input-box input:focus ~ label,
+main .container form.register-form .wrapper .input-box input:valid ~ label {
+  top: -5px;
+}
+main .container form.login-form .wrapper .input-box .icon,
+main .container form.register-form .wrapper .input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #077dec;
+  line-height: 57px;
+}
+main .container form.login-form .wrapper .remember-forgot,
+main .container form.register-form .wrapper .remember-forgot {
+  font-size: 0.9em;
+  color: #077dec;
+  font-weight: 500;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+main .container form.login-form .wrapper .remember-forgot label input,
+main .container form.register-form .wrapper .remember-forgot label input {
+  accent-color: #000;
+  margin-right: 3px;
+}
+main .container form.login-form .wrapper .remember-forgot a,
+main .container form.register-form .wrapper .remember-forgot a {
+  text-decoration: none;
+  color: #077dec;
+  transition: 0.4s;
+}
+main .container form.login-form .wrapper .remember-forgot a:hover,
+main .container form.register-form .wrapper .remember-forgot a:hover {
+  transform: scale(1.2);
+}
+main .container form.login-form .wrapper .btn,
+main .container form.register-form .wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(17deg, rgb(2, 0, 36) 38%, rgb(7, 125, 236) 63%);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 30px;
+}
+main .container form.login-form .wrapper .login-register,
+main .container form.register-form .wrapper .login-register {
+  font-size: 0.9em;
+  color: #077dec;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+main .container form.login-form .wrapper .login-register a,
+main .container form.register-form .wrapper .login-register a {
+  text-decoration: none;
+  color: #077dec;
+  margin-left: 10px;
+  color: #fff;
+  transition: 0.4s;
+  opacity: 0.7;
+}
+main .container form.login-form .wrapper .login-register a:hover,
+main .container form.register-form .wrapper .login-register a:hover {
+  opacity: 1;
+}
+main .container form.login-form {
+  transform: translateX(0);
+  overflow-y: hidden;
+}
+main .container form.register-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px;
+  transform: translateX(400px);
+  height: 500px;
+}
+main .container form.register-form .input-box {
+  margin: 20px 0 !important;
+}
+main .container form.register-form .input-box select {
+  width: 97%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  caret-color: #077dec;
+  color: #077dec;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+main .container form.register-form .btn {
+  margin-top: 0 !important;
+}
+main .container.active {
+  height: 760px;
+}
+main .container.active form.login-form {
+  transform: translateX(-400px);
+}
+main .container.active form.register-form {
+  left: 50%;
+  top: 254px;
+  transform: translate(-50%, -50%);
+  padding-bottom: 15px;
+}/*# sourceMappingURL=contactus.css.map */

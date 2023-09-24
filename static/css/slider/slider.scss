@@ -1,0 +1,86 @@
+
+
+// start variables
+$main-color : #1D1427;
+$second-color : #F9AA01;
+$third-color : #fff;
+$fourth-color : #A2A4A6;
+// end variables
+
+
+
+/* Start Swiper container styling */
+.swiper {
+    width: 100%;
+    max-height: 100vh;
+
+    &:hover {
+        .swiper-button-prev,
+        .swiper-button-next {
+            opacity: 1;
+        }
+    }
+
+    .swiper-wrapper {
+
+        .swiper-slide {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute;
+        transition: .4s;
+        opacity: 0;
+        color: $second-color;
+        margin: 0 20px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .swiper-button-next {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media(max-width:991px) {
+    .swiper {
+        height: 90vh;
+    }
+}
+
+@media(max-width:768px) {
+    .swiper {
+        height: 60vh;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+}
+
+@media(max-width:568px) {
+    .swiper {
+        height: 40vh;
+    }
+}
+
+@media(max-width:368px) {
+    .swiper {
+        height: 30vh;
+    }
+}
+/* End Swiper container styling */

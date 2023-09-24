@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("https://capricathemes.com/wordpress/WCM04/WCM040086/wp-content/themes/gamehoak/images/codezeel/body-bg.jpg");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F9AA01;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+#upbtn {
+  position: fixed;
+  bottom: 5%;
+  right: 20px;
+  background-color: #F9AA01;
+  transform: rotate(45deg);
+  padding: 12px 15px;
+  color: #000;
+  font-size: 1rem;
+  border: none;
+  display: none;
+  transition: 0.3s;
+  cursor: pointer;
+  animation: flash 1s linear infinite alternate;
+  z-index: 200;
+}
+#upbtn i {
+  transform: rotate(-45deg);
+}
+
+#upbtn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+@keyframes flash {
+  100% {
+    outline: 5px solid #997423;
+  }
+}
+.custom-shape-divider-top-1691334542 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1691334542 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 166px;
+}
+
+.custom-shape-divider-top-1691334542 .shape-fill {
+  fill: #4B207A;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D1427;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.loader {
+  display: flex;
+  margin: 0.25em 0;
+}
+
+.w-2 {
+  width: 0.5em;
+}
+
+.dash {
+  animation: dashArray 2s ease-in-out infinite, dashOffset 2s linear infinite;
+}
+
+.spin {
+  animation: spinDashArray 2s ease-in-out infinite, spin 8s ease-in-out infinite, dashOffset 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
+}
+@keyframes spinDashArray {
+  0% {
+    stroke-dasharray: 270 90;
+  }
+  50% {
+    stroke-dasharray: 0 360;
+  }
+  100% {
+    stroke-dasharray: 270 90;
+  }
+}
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 365;
+  }
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  12.5%, 25% {
+    rotate: 270deg;
+  }
+  37.5%, 50% {
+    rotate: 540deg;
+  }
+  62.5%, 75% {
+    rotate: 810deg;
+  }
+  87.5%, 100% {
+    rotate: 1080deg;
+  }
+}/*# sourceMappingURL=home.css.map */

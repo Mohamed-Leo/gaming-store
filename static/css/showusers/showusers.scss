@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://capricathemes.com/wordpress/WCM04/WCM040086/wp-content/themes/gamehoak/images/codezeel/body-bg.jpg");
+}
+
+// start variables
+$main-color : #1D1427;
+$second-color : #F9AA01;
+$third-color : #fff;
+$fourth-color : #A2A4A6;
+// end variables
+
+
+
+
+
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.table {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-x: auto;
+
+
+    .intro {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    table {
+        min-width: 1000px;
+        width: 100%;
+        border-spacing: 8px;
+        font-size: 14px;
+        text-align: center;
+
+        thead tr {
+            font-size: 18px;
+        }
+
+        thead tr th {
+            padding: 15px;
+            background-color: #eee;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3294117647);
+            text-transform: capitalize;
+            font-size: 23px;
+        }
+
+        tbody tr {
+            transition: 0.3s;
+        }
+
+        tbody tr:hover {
+            background-color: rgba(52, 73, 94, 0.5764705882);
+        }
+
+        tbody tr:hover td {
+            color: #fff;
+        }
+
+        tbody tr td {
+            padding: 15px;
+            transition: 0.3s;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3294117647);
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        tbody tr td img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            padding: 2px;
+            background-color: white;
+        }
+
+        tbody tr td img:not(:first-child) {
+            margin-left: -20px;
+        }
+        
+        tbody .green {
+            background-color: #22c55e;
+            color: #fff;
+        }
+    }
+}
